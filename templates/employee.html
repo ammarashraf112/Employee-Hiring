@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Person Hired?</title>
+</head>
+<body>
+    Welcome to Flask.We will be using ML
+    <form action="{{url_for('prediction_webpage')}}"
+        method="post">
+      <div>
+        <label>Years Experience</label>
+        <input type="text" name="Years Experience">
+      </div>
+      <div>
+        <label>Employed?</label>
+        <input type="text" name="Employed?">
+      </div>
+      <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+</body>
+</html>
